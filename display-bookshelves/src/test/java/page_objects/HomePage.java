@@ -12,13 +12,15 @@ import util.DriverSetup;
 public class HomePage {
 	private String url = "https://www.urbanladder.com/";
 	private By giftCardLinkLocator = By.linkText("Gift Cards");
-	private By bookShelvesLocator = By.linkText("//a[@class='category']/h4[contains(text(), 'Bookshelves')] ");
+	private By bookShelvesLocator = By.xpath("//a[@class='category']/h4[contains(text(), 'Bookshelves')]");
 	private By dealZoneLocator = By.xpath("//span[contains(text(), 'Deal Zone')]");
 	private By subMenuLocator = By.xpath("//li[@class = 'topnav_item dealzoneunit']//li[contains(@class, 'subnav_item')]//span");
 	
 	private List<String> subMenuList = new ArrayList<>();
-	
-	
+
+	public String getUrl() {
+		return url;
+	}
 
 	private WebDriver driver;
 
