@@ -27,7 +27,7 @@ public class HomePageTest {
 		this.page.launch();
 	}
 	
-	@Test
+	@Test(priority = 0)
 	public void subMenuCount() throws InterruptedException {
 		this.page.dealZoneClick();
 		subMenuList = this.page.storeSubMenu();
@@ -35,7 +35,7 @@ public class HomePageTest {
 		Assert.assertEquals(page.subMenuCount(), 8);
 	}
 	
-	@Test
+	@Test(priority = 1)
 	public void subMenuItemEmpty() {
 		for(String item : subMenuList) {
 			if(item.length() <= 0) {
