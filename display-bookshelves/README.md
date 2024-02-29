@@ -26,8 +26,8 @@ If more than one item with same price displayed, include that details as well.
 ### Detailed Description: Hackathon Ideas
 
 1. Display the name & price of first 3 Bookshelves below Rs. 15000, with Storage type as open & exclude out of stock
-2. From Collections, retrieve all sub-menu items under Being-At-home and store in a List; Display the same
-3. Gift cards - choose "Birthday/Anniversay"; fill customize the gift card; fill from to details with any one input invalid (example: email); Capture & display the error message
+2. From The Home Page, retrieve all sub-menu items under Top Deals and store in a List; Display the same
+3. Gift cards - choose "Birthday/Anniversay"; fill customize the gift card; fill from to details with any one input invalid (example: email)
 
 
 ### Key Automation Scope
@@ -38,3 +38,26 @@ If more than one item with same price displayed, include that details as well.
 - Scrolling down in web page
 - Filling form (in different objects in web page)
 - Capture warning message
+
+## Project Implementation
+
+| Module      | Test Scenario                          | Test Case                                           |
+|-------------|----------------------------------------|-----------------------------------------------------|
+| Bookshelves | Basic Navigation                       | basic navigation from the home page to bookshelves  |
+|             | Application of price filter            | setting price filter using slider functional or not |
+|             | Application of Storage Type Filter     | storage type filter being applied or not            |
+|             | Exclude out of stock                   | exclude out of stock is being applied or not        |
+| Gift Cards  | Basic Navigation                       | basic navigation from the home page                 |
+|             | Filling the Customise form             | positive amount test                                |
+|             |                                        | negative amount test                                |
+|             |                                        | positive amount test using buttons                  |
+|             |                                        | negative amount test using buttons                  |
+|             |                                        | positive date test                                  |
+|             |                                        | negative date test                                  |
+|             | Delivery to all valid zipcodes         | positive zip code test                              |
+|             | Filling Customer and Recipient Details | positive customer and recipient details test        |
+|             |                                        | negative customer and recipient details test        |
+| Home Page   | basic navigation test                  | launching home page on browser                      |
+|             | Top Deals Sub Menu Item                | Sub menu item count test                            |
+|             |                                        | Check for emptiness in Sub Menue Items              |
+
