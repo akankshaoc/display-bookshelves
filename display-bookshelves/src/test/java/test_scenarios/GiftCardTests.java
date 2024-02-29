@@ -37,7 +37,7 @@ public class GiftCardTests extends BaseGiftCardTest{
 		//1. fetch the common driver
 		this.driver = super.getDriver();
 		
-		//2. initialise the gift card page object
+		//2. Initialize the gift card page object
 		this.page = new GiftCardsPage(driver);
 		
 		//3. launch a new browser with the url of gift page
