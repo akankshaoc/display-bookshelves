@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,8 +39,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Smoke_Suite" class="navigator-link">
-              <span class="suite-name border-passed">Smoke Suite</span>
+            <a href="#" panel-name="suite-Regression_Suite" class="navigator-link">
+              <span class="suite-name border-failed">Regression Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Smoke_Suite" class="navigator-link ">
-                    <span>C:\Users\2308990\git\repository\display-bookshelves\testng_smoke.xml</span>
+                  <a href="#" panel-name="test-xml-Regression_Suite" class="navigator-link ">
+                    <span>C:\Users\2308990\git\repository\display-bookshelves\testng_regression.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Smoke_Suite" class="navigator-link ">
+                  <a href="#" panel-name="testlist-Regression_Suite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Smoke_Suite" class="navigator-link ">
-                    <span>0 groups</span>
+                  <a href="#" panel-name="group-Regression_Suite" class="navigator-link ">
+                    <span>3 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Smoke_Suite" class="navigator-link ">
+                  <a href="#" panel-name="times-Regression_Suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Smoke_Suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-Regression_Suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Smoke_Suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-Regression_Suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Smoke_Suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-Regression_Suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -93,31 +93,215 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">38 methods, 4 failed,   34 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Regression_Suite" class="hide-methods failed suite-Regression_Suite"> (hide)</a> <!-- hide-methods failed suite-Regression_Suite -->
+                      <a href="#" panel-name="suite-Regression_Suite" class="show-methods failed suite-Regression_Suite"> (show)</a> <!-- show-methods failed suite-Regression_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Regression_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="test_scenarios.GiftCardTests" class="method navigator-link" hash-for-method="negativeCustomerAndRecipientTest(123, 123@example.com, 9999999999, customer should not be able to fill in a number as a name, Jane Ma...)">negativeCustomerAndRecipientTest(123, 123@example.com, 9999999999, customer should not be able to fill in a number as a name, Jane Ma...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="test_scenarios.GiftCardTests" class="method navigator-link" hash-for-method="negativeCustomerAndRecipientTest(Jane Mason, jane.mason@example.com, 7033333067, customer should be able to order a gift card with va...)">negativeCustomerAndRecipientTest(Jane Mason, jane.mason@example.com, 7033333067, customer should be able to order a gift card with va...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="test_scenarios.GiftCardTests" class="method navigator-link" hash-for-method="negativeCustomerAndRecipientTest(John Doe, john.doe@example, 9999999999, customer should only be able to fill valid emails of type jo...)">negativeCustomerAndRecipientTest(John Doe, john.doe@example, 9999999999, customer should only be able to fill valid emails of type jo...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="test_scenarios.GiftCardTests" class="method navigator-link" hash-for-method="negativeCustomerAndRecipientTest(Jane Mason, jane.mason@example.com, 7033333067, customer should be able to order a gift card with va...)">negativeCustomerAndRecipientTest(Jane Mason, jane.mason@example.com, 7033333067, customer should be able to order a gift card with va...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Regression_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Smoke_Suite" class="hide-methods passed suite-Smoke_Suite"> (hide)</a> <!-- hide-methods passed suite-Smoke_Suite -->
-                      <a href="#" panel-name="suite-Smoke_Suite" class="show-methods passed suite-Smoke_Suite"> (show)</a> <!-- show-methods passed suite-Smoke_Suite -->
+                      <a href="#" panel-name="suite-Regression_Suite" class="hide-methods passed suite-Regression_Suite"> (hide)</a> <!-- hide-methods passed suite-Regression_Suite -->
+                      <a href="#" panel-name="suite-Regression_Suite" class="show-methods passed suite-Regression_Suite"> (show)</a> <!-- show-methods passed suite-Regression_Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Smoke_Suite">
+                    <div class="method-list-content passed suite-Regression_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Smoke_Suite" title="test_scenarios.BasicNavigationTests" class="method navigator-link" hash-for-method="basicNavigationToHomePageTest(Buy Furniture Online and Get up to 50% Off | Shop Now - Urban Ladder)">basicNavigationToHomePageTest(Buy Furniture Online and Get up to 50% Off | Shop Now - Urban Ladder)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Regression_Suite" title="test_scenarios.GiftCardTests" class="method navigator-link" hash-for-method="negativeAmountTest(999, valid amount in range [1000, 500000])">negativeAmountTest(999, valid amount in range [1000, 500000])</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Smoke_Suite" title="test_scenarios.BasicNavigationTests" class="method navigator-link" hash-for-method="navigationFromHomePageToBookShelf(Buy Bookshelves Online and Get up to 50% Off | Shop Now - Urban Ladder)">navigationFromHomePageToBookShelf(Buy Bookshelves Online and Get up to 50% Off | Shop Now - Urban Ladder)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Regression_Suite" title="test_scenarios.GiftCardTests" class="method navigator-link" hash-for-method="negativeButtonAmountTest(3, there should be no more than 3 amount options buttons)">negativeButtonAmountTest(3, there should be no more than 3 amount options buttons)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Smoke_Suite" title="test_scenarios.BasicNavigationTests" class="method navigator-link" hash-for-method="navigationFromHomePageToGiftCards(Gift Card - Buy Gift Cards &amp; Vouchers Online for Wedding, Birthday | Urban Ladder)">navigationFromHomePageToGiftCards(Gift Card - Buy Gift Cards & Vouchers Online for Wedding, Birthday | Urban Ladder)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Regression_Suite" title="test_scenarios.GiftCardTests" class="method navigator-link" hash-for-method="negativeCustomerAndRecipientTest(Jane Mason, jane.mason@example.com, 7033333067, customer should be able to order a gift card with va...)">negativeCustomerAndRecipientTest(Jane Mason, jane.mason@example.com, 7033333067, customer should be able to order a gift card with va...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Smoke_Suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="test_scenarios.GiftCardTests" class="method navigator-link" hash-for-method="negativeCustomerAndRecipientTest(John Doe, email, 9999999999, customer should only be able to fill valid emails of type john.doe@exam...)">negativeCustomerAndRecipientTest(John Doe, email, 9999999999, customer should only be able to fill valid emails of type john.doe@exam...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="test_scenarios.GiftCardTests" class="method navigator-link" hash-for-method="negativeCustomerAndRecipientTest(John Doe, john.doe@example.com, 1234567890, customer should only be able to fill valid phone numbers...)">negativeCustomerAndRecipientTest(John Doe, john.doe@example.com, 1234567890, customer should only be able to fill valid phone numbers...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="test_scenarios.GiftCardTests" class="method navigator-link" hash-for-method="negativeCustomerAndRecipientTest(Jane Mason, jane.mason@example.com, 7033333067, customer should be able to order a gift card with va...)">negativeCustomerAndRecipientTest(Jane Mason, jane.mason@example.com, 7033333067, customer should be able to order a gift card with va...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="test_scenarios.GiftCardTests" class="method navigator-link" hash-for-method="negativeCustomerAndRecipientTest(Jane Mason, jane.mason@example.com, 7033333067, customer should be able to order a gift card with va...)">negativeCustomerAndRecipientTest(Jane Mason, jane.mason@example.com, 7033333067, customer should be able to order a gift card with va...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="test_scenarios.GiftCardTests" class="method navigator-link" hash-for-method="negativeDateTest(2024-02-29)">negativeDateTest(2024-02-29)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="test_scenarios.GiftCardTests" class="method navigator-link" hash-for-method="negativeDateTest(2024-06-01)">negativeDateTest(2024-06-01)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="test_scenarios.GiftCardTests" class="method navigator-link" hash-for-method="positiveAmounTest(1001, valid amount in range [1000, 500000])">positiveAmounTest(1001, valid amount in range [1000, 500000])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="test_scenarios.GiftCardTests" class="method navigator-link" hash-for-method="positiveAmounTest(499999, valid amount in range [1000, 500000])">positiveAmounTest(499999, valid amount in range [1000, 500000])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="test_scenarios.GiftCardTests" class="method navigator-link" hash-for-method="positiveAmounTest(1000, valid amount in range [1000, 500000])">positiveAmounTest(1000, valid amount in range [1000, 500000])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="test_scenarios.GiftCardTests" class="method navigator-link" hash-for-method="positiveAmounTest(500000, valid amount in range [1000, 500000])">positiveAmounTest(500000, valid amount in range [1000, 500000])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="test_scenarios.GiftCardTests" class="method navigator-link" hash-for-method="positiveButtonAmountTest(1, the user should be able to order with all three amount option buttons)">positiveButtonAmountTest(1, the user should be able to order with all three amount option buttons)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="test_scenarios.GiftCardTests" class="method navigator-link" hash-for-method="positiveButtonAmountTest(0, the user should be able to order with all three amount option buttons)">positiveButtonAmountTest(0, the user should be able to order with all three amount option buttons)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="test_scenarios.GiftCardTests" class="method navigator-link" hash-for-method="positiveButtonAmountTest(2, the user should be able to order with all three amount option buttons)">positiveButtonAmountTest(2, the user should be able to order with all three amount option buttons)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="test_scenarios.GiftCardTests" class="method navigator-link" hash-for-method="positiveCustomerAndRecipientTest(John Doe, john.doe@example.com, 9999999999, customer should be able to order a gift card with valid ...)">positiveCustomerAndRecipientTest(John Doe, john.doe@example.com, 9999999999, customer should be able to order a gift card with valid ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="test_scenarios.GiftCardTests" class="method navigator-link" hash-for-method="positiveCustomerAndRecipientTest(Jane Mason, jane.mason@example.com, 7033333067, customer should be able to order a gift card with va...)">positiveCustomerAndRecipientTest(Jane Mason, jane.mason@example.com, 7033333067, customer should be able to order a gift card with va...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="test_scenarios.GiftCardTests" class="method navigator-link" hash-for-method="positiveCustomerAndRecipientTest(Jane Mason, jane.mason@example.com, 7033333067, customer should be able to order a gift card with va...)">positiveCustomerAndRecipientTest(Jane Mason, jane.mason@example.com, 7033333067, customer should be able to order a gift card with va...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="test_scenarios.GiftCardTests" class="method navigator-link" hash-for-method="positiveCustomerAndRecipientTest(Jane Mason, jane.mason@example.com, 7033333067, customer should be able to order a gift card with va...)">positiveCustomerAndRecipientTest(Jane Mason, jane.mason@example.com, 7033333067, customer should be able to order a gift card with va...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="test_scenarios.GiftCardTests" class="method navigator-link" hash-for-method="positiveDateTest(2024-05-30)">positiveDateTest(2024-05-30)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="test_scenarios.GiftCardTests" class="method navigator-link" hash-for-method="positiveDateTest(2024-03-01)">positiveDateTest(2024-03-01)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="test_scenarios.GiftCardTests" class="method navigator-link" hash-for-method="positiveDateTest(2024-05-31)">positiveDateTest(2024-05-31)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="test_scenarios.GiftCardTests" class="method navigator-link" hash-for-method="positiveDateTest(2024-03-02)">positiveDateTest(2024-03-02)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="test_scenarios.GiftCardTests" class="method navigator-link" hash-for-method="positiveZipCodeTest(500001)">positiveZipCodeTest(500001)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="test_scenarios.GiftCardTests" class="method navigator-link" hash-for-method="positiveZipCodeTest(700001)">positiveZipCodeTest(700001)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="test_scenarios.GiftCardTests" class="method navigator-link" hash-for-method="positiveZipCodeTest(560001)">positiveZipCodeTest(560001)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="test_scenarios.GiftCardTests" class="method navigator-link" hash-for-method="positiveZipCodeTest(110001)">positiveZipCodeTest(110001)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="test_scenarios.GiftCardTests" class="method navigator-link" hash-for-method="positiveZipCodeTest(400001)">positiveZipCodeTest(400001)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="test_scenarios.HomePageTest" class="method navigator-link" hash-for-method="subMenuCount">subMenuCount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="test_scenarios.HomePageTest" class="method navigator-link" hash-for-method="subMenuItemEmpty">subMenuItemEmpty</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="test_scenarios.BookshelvesTest" class="method navigator-link" hash-for-method="testExcludeOutOfStock">testExcludeOutOfStock</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="test_scenarios.BookshelvesTest" class="method navigator-link" hash-for-method="testPriceRange">testPriceRange</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="test_scenarios.BookshelvesTest" class="method navigator-link" hash-for-method="testStorageType">testStorageType</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Regression_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -128,157 +312,856 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Smoke_Suite" class="panel Smoke_Suite">
-          <div class="suite-Smoke_Suite-class-passed">
+        <div panel-name="suite-Regression_Suite" class="panel Regression_Suite">
+          <div class="suite-Regression_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">test_scenarios.BasicNavigationTests</span>
+              <img src="failed.png"/>
+              <span class="class-name">test_scenarios.GiftCardTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="basicNavigationToHomePageTest(Buy Furniture Online and Get up to 50% Off | Shop Now - Urban Ladder)">
-                  </a> <!-- basicNavigationToHomePageTest(Buy Furniture Online and Get up to 50% Off | Shop Now - Urban Ladder) -->
-                  <span class="method-name">basicNavigationToHomePageTest</span>
-                  <span class="parameters">(Buy Furniture Online and Get up to 50% Off | Shop Now - Urban Ladder)</span>
+                  <a name="negativeCustomerAndRecipientTest(123, 123@example.com, 9999999999, customer should not be able to fill in a number as a name, Jane Ma...)">
+                  </a> <!-- negativeCustomerAndRecipientTest(123, 123@example.com, 9999999999, customer should not be able to fill in a number as a name, Jane Ma...) -->
+                  <span class="method-name">negativeCustomerAndRecipientTest</span>
+                  <span class="parameters">(123, 123@example.com, 9999999999, customer should not be able to fill in a number as a name, Jane Mason, jane.mason@example.com, 7033333067, somewhere, over the rainbows, customer should be able to order a gift card with valid details)</span>
+                  <div class="stack-trace">java.lang.AssertionError: customer should be able to order a gift card with valid details and customer should not be able to fill in a number as a name expected [false] but found [true]
+	at test_scenarios.GiftCardTests.negativeCustomerAndRecipientTest(GiftCardTests.java:383)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="navigationFromHomePageToBookShelf(Buy Bookshelves Online and Get up to 50% Off | Shop Now - Urban Ladder)">
-                  </a> <!-- navigationFromHomePageToBookShelf(Buy Bookshelves Online and Get up to 50% Off | Shop Now - Urban Ladder) -->
-                  <span class="method-name">navigationFromHomePageToBookShelf</span>
-                  <span class="parameters">(Buy Bookshelves Online and Get up to 50% Off | Shop Now - Urban Ladder)</span>
+                  <a name="negativeCustomerAndRecipientTest(Jane Mason, jane.mason@example.com, 7033333067, customer should be able to order a gift card with va...)">
+                  </a> <!-- negativeCustomerAndRecipientTest(Jane Mason, jane.mason@example.com, 7033333067, customer should be able to order a gift card with va...) -->
+                  <span class="method-name">negativeCustomerAndRecipientTest</span>
+                  <span class="parameters">(Jane Mason, jane.mason@example.com, 7033333067, customer should be able to order a gift card with valid details, 123, 123@example.com, 9999999999, somewhere, over the rainbows, customer should not be able to fill in a number as a name)</span>
+                  <div class="stack-trace">java.lang.AssertionError: customer should not be able to fill in a number as a name and customer should be able to order a gift card with valid details expected [false] but found [true]
+	at test_scenarios.GiftCardTests.negativeCustomerAndRecipientTest(GiftCardTests.java:383)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="navigationFromHomePageToGiftCards(Gift Card - Buy Gift Cards &amp; Vouchers Online for Wedding, Birthday | Urban Ladder)">
-                  </a> <!-- navigationFromHomePageToGiftCards(Gift Card - Buy Gift Cards & Vouchers Online for Wedding, Birthday | Urban Ladder) -->
-                  <span class="method-name">navigationFromHomePageToGiftCards</span>
-                  <span class="parameters">(Gift Card - Buy Gift Cards & Vouchers Online for Wedding, Birthday | Urban Ladder)</span>
+                  <a name="negativeCustomerAndRecipientTest(John Doe, john.doe@example, 9999999999, customer should only be able to fill valid emails of type jo...)">
+                  </a> <!-- negativeCustomerAndRecipientTest(John Doe, john.doe@example, 9999999999, customer should only be able to fill valid emails of type jo...) -->
+                  <span class="method-name">negativeCustomerAndRecipientTest</span>
+                  <span class="parameters">(John Doe, john.doe@example, 9999999999, customer should only be able to fill valid emails of type john.doe@example.com, Jane Mason, jane.mason@example.com, 7033333067, somewhere, over the rainbows, customer should be able to order a gift card with valid details)</span>
+                  <div class="stack-trace">java.lang.AssertionError: customer should be able to order a gift card with valid details and customer should only be able to fill valid emails of type john.doe@example.com expected [false] but found [true]
+	at test_scenarios.GiftCardTests.negativeCustomerAndRecipientTest(GiftCardTests.java:383)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="negativeCustomerAndRecipientTest(Jane Mason, jane.mason@example.com, 7033333067, customer should be able to order a gift card with va...)">
+                  </a> <!-- negativeCustomerAndRecipientTest(Jane Mason, jane.mason@example.com, 7033333067, customer should be able to order a gift card with va...) -->
+                  <span class="method-name">negativeCustomerAndRecipientTest</span>
+                  <span class="parameters">(Jane Mason, jane.mason@example.com, 7033333067, customer should be able to order a gift card with valid details, John Doe, john.doe@example, 9999999999, somewhere, over the rainbows, customer should only be able to fill valid emails of type john.doe@example.com)</span>
+                  <div class="stack-trace">java.lang.AssertionError: customer should only be able to fill valid emails of type john.doe@example.com and customer should be able to order a gift card with valid details expected [false] but found [true]
+	at test_scenarios.GiftCardTests.negativeCustomerAndRecipientTest(GiftCardTests.java:383)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Smoke_Suite-class-passed -->
-        </div> <!-- panel Smoke_Suite -->
-        <div panel-name="test-xml-Smoke_Suite" class="panel">
+          </div> <!-- suite-Regression_Suite-class-failed -->
+          <div class="suite-Regression_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test_scenarios.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="subMenuCount">
+                  </a> <!-- subMenuCount -->
+                  <span class="method-name">subMenuCount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="subMenuItemEmpty">
+                  </a> <!-- subMenuItemEmpty -->
+                  <span class="method-name">subMenuItemEmpty</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression_Suite-class-passed -->
+          <div class="suite-Regression_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test_scenarios.GiftCardTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="negativeAmountTest(999, valid amount in range [1000, 500000])">
+                  </a> <!-- negativeAmountTest(999, valid amount in range [1000, 500000]) -->
+                  <span class="method-name">negativeAmountTest</span>
+                  <span class="parameters">(999, valid amount in range [1000, 500000])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="negativeButtonAmountTest(3, there should be no more than 3 amount options buttons)">
+                  </a> <!-- negativeButtonAmountTest(3, there should be no more than 3 amount options buttons) -->
+                  <span class="method-name">negativeButtonAmountTest</span>
+                  <span class="parameters">(3, there should be no more than 3 amount options buttons)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="negativeCustomerAndRecipientTest(Jane Mason, jane.mason@example.com, 7033333067, customer should be able to order a gift card with va...)">
+                  </a> <!-- negativeCustomerAndRecipientTest(Jane Mason, jane.mason@example.com, 7033333067, customer should be able to order a gift card with va...) -->
+                  <span class="method-name">negativeCustomerAndRecipientTest</span>
+                  <span class="parameters">(Jane Mason, jane.mason@example.com, 7033333067, customer should be able to order a gift card with valid details, John Doe, email, 9999999999, somewhere, over the rainbows, customer should only be able to fill valid emails of type john.doe@example.com)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="negativeCustomerAndRecipientTest(John Doe, email, 9999999999, customer should only be able to fill valid emails of type john.doe@exam...)">
+                  </a> <!-- negativeCustomerAndRecipientTest(John Doe, email, 9999999999, customer should only be able to fill valid emails of type john.doe@exam...) -->
+                  <span class="method-name">negativeCustomerAndRecipientTest</span>
+                  <span class="parameters">(John Doe, email, 9999999999, customer should only be able to fill valid emails of type john.doe@example.com, Jane Mason, jane.mason@example.com, 7033333067, somewhere, over the rainbows, customer should be able to order a gift card with valid details)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="negativeCustomerAndRecipientTest(John Doe, john.doe@example.com, 1234567890, customer should only be able to fill valid phone numbers...)">
+                  </a> <!-- negativeCustomerAndRecipientTest(John Doe, john.doe@example.com, 1234567890, customer should only be able to fill valid phone numbers...) -->
+                  <span class="method-name">negativeCustomerAndRecipientTest</span>
+                  <span class="parameters">(John Doe, john.doe@example.com, 1234567890, customer should only be able to fill valid phone numbers with 10 digits, Jane Mason, jane.mason@example.com, 7033333067, somewhere, over the rainbows, customer should be able to order a gift card with valid details)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="negativeCustomerAndRecipientTest(Jane Mason, jane.mason@example.com, 7033333067, customer should be able to order a gift card with va...)">
+                  </a> <!-- negativeCustomerAndRecipientTest(Jane Mason, jane.mason@example.com, 7033333067, customer should be able to order a gift card with va...) -->
+                  <span class="method-name">negativeCustomerAndRecipientTest</span>
+                  <span class="parameters">(Jane Mason, jane.mason@example.com, 7033333067, customer should be able to order a gift card with valid details, John Doe, john.doe@example.com, 1234567890, somewhere, over the rainbows, customer should only be able to fill valid phone numbers with 10 digits)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="negativeCustomerAndRecipientTest(Jane Mason, jane.mason@example.com, 7033333067, customer should be able to order a gift card with va...)">
+                  </a> <!-- negativeCustomerAndRecipientTest(Jane Mason, jane.mason@example.com, 7033333067, customer should be able to order a gift card with va...) -->
+                  <span class="method-name">negativeCustomerAndRecipientTest</span>
+                  <span class="parameters">(Jane Mason, jane.mason@example.com, 7033333067, customer should be able to order a gift card with valid details, John Doe, john.doe@example.com, 9999, somewhere, over the rainbows, customer should only be able to fill valid phone numbers with 10 digits)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="negativeDateTest(2024-02-29)">
+                  </a> <!-- negativeDateTest(2024-02-29) -->
+                  <span class="method-name">negativeDateTest</span>
+                  <span class="parameters">(2024-02-29)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="negativeDateTest(2024-06-01)">
+                  </a> <!-- negativeDateTest(2024-06-01) -->
+                  <span class="method-name">negativeDateTest</span>
+                  <span class="parameters">(2024-06-01)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="positiveAmounTest(1001, valid amount in range [1000, 500000])">
+                  </a> <!-- positiveAmounTest(1001, valid amount in range [1000, 500000]) -->
+                  <span class="method-name">positiveAmounTest</span>
+                  <span class="parameters">(1001, valid amount in range [1000, 500000])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="positiveAmounTest(499999, valid amount in range [1000, 500000])">
+                  </a> <!-- positiveAmounTest(499999, valid amount in range [1000, 500000]) -->
+                  <span class="method-name">positiveAmounTest</span>
+                  <span class="parameters">(499999, valid amount in range [1000, 500000])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="positiveAmounTest(1000, valid amount in range [1000, 500000])">
+                  </a> <!-- positiveAmounTest(1000, valid amount in range [1000, 500000]) -->
+                  <span class="method-name">positiveAmounTest</span>
+                  <span class="parameters">(1000, valid amount in range [1000, 500000])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="positiveAmounTest(500000, valid amount in range [1000, 500000])">
+                  </a> <!-- positiveAmounTest(500000, valid amount in range [1000, 500000]) -->
+                  <span class="method-name">positiveAmounTest</span>
+                  <span class="parameters">(500000, valid amount in range [1000, 500000])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="positiveButtonAmountTest(1, the user should be able to order with all three amount option buttons)">
+                  </a> <!-- positiveButtonAmountTest(1, the user should be able to order with all three amount option buttons) -->
+                  <span class="method-name">positiveButtonAmountTest</span>
+                  <span class="parameters">(1, the user should be able to order with all three amount option buttons)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="positiveButtonAmountTest(0, the user should be able to order with all three amount option buttons)">
+                  </a> <!-- positiveButtonAmountTest(0, the user should be able to order with all three amount option buttons) -->
+                  <span class="method-name">positiveButtonAmountTest</span>
+                  <span class="parameters">(0, the user should be able to order with all three amount option buttons)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="positiveButtonAmountTest(2, the user should be able to order with all three amount option buttons)">
+                  </a> <!-- positiveButtonAmountTest(2, the user should be able to order with all three amount option buttons) -->
+                  <span class="method-name">positiveButtonAmountTest</span>
+                  <span class="parameters">(2, the user should be able to order with all three amount option buttons)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="positiveCustomerAndRecipientTest(John Doe, john.doe@example.com, 9999999999, customer should be able to order a gift card with valid ...)">
+                  </a> <!-- positiveCustomerAndRecipientTest(John Doe, john.doe@example.com, 9999999999, customer should be able to order a gift card with valid ...) -->
+                  <span class="method-name">positiveCustomerAndRecipientTest</span>
+                  <span class="parameters">(John Doe, john.doe@example.com, 9999999999, customer should be able to order a gift card with valid details, Jane Mason, jane.mason@example.com, 7033333067, somewhere, over the rainbows, customer should be able to order a gift card with valid details)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="positiveCustomerAndRecipientTest(Jane Mason, jane.mason@example.com, 7033333067, customer should be able to order a gift card with va...)">
+                  </a> <!-- positiveCustomerAndRecipientTest(Jane Mason, jane.mason@example.com, 7033333067, customer should be able to order a gift card with va...) -->
+                  <span class="method-name">positiveCustomerAndRecipientTest</span>
+                  <span class="parameters">(Jane Mason, jane.mason@example.com, 7033333067, customer should be able to order a gift card with valid details, Jane Mason, jane.mason@example.com, 7033333067, somewhere, over the rainbows, customer should be able to order a gift card with valid details)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="positiveCustomerAndRecipientTest(Jane Mason, jane.mason@example.com, 7033333067, customer should be able to order a gift card with va...)">
+                  </a> <!-- positiveCustomerAndRecipientTest(Jane Mason, jane.mason@example.com, 7033333067, customer should be able to order a gift card with va...) -->
+                  <span class="method-name">positiveCustomerAndRecipientTest</span>
+                  <span class="parameters">(Jane Mason, jane.mason@example.com, 7033333067, customer should be able to order a gift card with valid details, John Doe, john.doe@example.com, 9999999999, somewhere, over the rainbows, customer should be able to order a gift card with valid details)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="positiveCustomerAndRecipientTest(Jane Mason, jane.mason@example.com, 7033333067, customer should be able to order a gift card with va...)">
+                  </a> <!-- positiveCustomerAndRecipientTest(Jane Mason, jane.mason@example.com, 7033333067, customer should be able to order a gift card with va...) -->
+                  <span class="method-name">positiveCustomerAndRecipientTest</span>
+                  <span class="parameters">(Jane Mason, jane.mason@example.com, 7033333067, customer should be able to order a gift card with valid details, Jane Mason, jane.mason@example.com, 7033333067, somewhere, over the rainbows, customer should be able to order a gift card with valid details)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="positiveDateTest(2024-05-30)">
+                  </a> <!-- positiveDateTest(2024-05-30) -->
+                  <span class="method-name">positiveDateTest</span>
+                  <span class="parameters">(2024-05-30)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="positiveDateTest(2024-03-01)">
+                  </a> <!-- positiveDateTest(2024-03-01) -->
+                  <span class="method-name">positiveDateTest</span>
+                  <span class="parameters">(2024-03-01)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="positiveDateTest(2024-05-31)">
+                  </a> <!-- positiveDateTest(2024-05-31) -->
+                  <span class="method-name">positiveDateTest</span>
+                  <span class="parameters">(2024-05-31)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="positiveDateTest(2024-03-02)">
+                  </a> <!-- positiveDateTest(2024-03-02) -->
+                  <span class="method-name">positiveDateTest</span>
+                  <span class="parameters">(2024-03-02)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="positiveZipCodeTest(500001)">
+                  </a> <!-- positiveZipCodeTest(500001) -->
+                  <span class="method-name">positiveZipCodeTest</span>
+                  <span class="parameters">(500001)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="positiveZipCodeTest(700001)">
+                  </a> <!-- positiveZipCodeTest(700001) -->
+                  <span class="method-name">positiveZipCodeTest</span>
+                  <span class="parameters">(700001)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="positiveZipCodeTest(560001)">
+                  </a> <!-- positiveZipCodeTest(560001) -->
+                  <span class="method-name">positiveZipCodeTest</span>
+                  <span class="parameters">(560001)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="positiveZipCodeTest(110001)">
+                  </a> <!-- positiveZipCodeTest(110001) -->
+                  <span class="method-name">positiveZipCodeTest</span>
+                  <span class="parameters">(110001)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="positiveZipCodeTest(400001)">
+                  </a> <!-- positiveZipCodeTest(400001) -->
+                  <span class="method-name">positiveZipCodeTest</span>
+                  <span class="parameters">(400001)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression_Suite-class-passed -->
+          <div class="suite-Regression_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test_scenarios.BookshelvesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testExcludeOutOfStock">
+                  </a> <!-- testExcludeOutOfStock -->
+                  <span class="method-name">testExcludeOutOfStock</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPriceRange">
+                  </a> <!-- testPriceRange -->
+                  <span class="method-name">testPriceRange</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testStorageType">
+                  </a> <!-- testStorageType -->
+                  <span class="method-name">testStorageType</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression_Suite-class-passed -->
+        </div> <!-- panel Regression_Suite -->
+        <div panel-name="test-xml-Regression_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\2308990\git\repository\display-bookshelves\testng_smoke.xml</span>
+            <span class="header-content">C:\Users\2308990\git\repository\display-bookshelves\testng_regression.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;1&quot; name=&quot;Smoke Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;1&quot; name=&quot;Test&quot;&gt;
-    &lt;parameter name=&quot;home-page__title&quot; value=&quot;Buy Furniture Online and Get up to 50% Off | Shop Now - Urban Ladder&quot;/&gt;
-    &lt;parameter name=&quot;bookshelf-page__title&quot; value=&quot;Buy Bookshelves Online and Get up to 50% Off | Shop Now - Urban Ladder&quot;/&gt;
-    &lt;parameter name=&quot;giftcard-page__title&quot; value=&quot;Gift Card - Buy Gift Cards &amp;amp; Vouchers Online for Wedding, Birthday | Urban Ladder&quot;/&gt;
+&lt;suite thread-count=&quot;3&quot; parallel=&quot;classes&quot; name=&quot;Regression Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;classes&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;test_scenarios.BasicNavigationTests&quot;/&gt;
+      &lt;class name=&quot;test_scenarios.HomePageTest&quot;/&gt;
+      &lt;class name=&quot;test_scenarios.BookshelvesTest&quot;/&gt;
+      &lt;class name=&quot;test_scenarios.GiftCardTests&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
-&lt;/suite&gt; &lt;!-- Smoke Suite --&gt;
+&lt;/suite&gt; &lt;!-- Regression Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Smoke_Suite" class="panel">
+        <div panel-name="testlist-Regression_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Smoke Suite</span>
+            <span class="header-content">Tests for Regression Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Smoke_Suite" class="panel">
+        <div panel-name="group-Regression_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Smoke Suite</span>
+            <span class="header-content">Groups for Regression Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">customer_and_recipient_details</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">negativeCustomerAndRecipientTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">positiveCustomerAndRecipientTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">customise_form_test</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">negativeAmountTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">negativeButtonAmountTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">negativeDateTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">positiveAmounTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">positiveButtonAmountTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">positiveDateTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">zip_code_test</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">positiveZipCodeTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Smoke_Suite" class="panel">
+        <div panel-name="times-Regression_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Smoke Suite</span>
+            <span class="header-content">Times for Regression Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Smoke_Suite');
-function tableData_Smoke_Suite() {
+suiteTableInitFunctions.push('tableData_Regression_Suite');
+function tableData_Regression_Suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(38);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'navigationFromHomePageToGiftCards')
-data.setCell(0, 2, 'test_scenarios.BasicNavigationTests')
-data.setCell(0, 3, 5791);
+data.setCell(0, 1, 'subMenuCount')
+data.setCell(0, 2, 'test_scenarios.HomePageTest')
+data.setCell(0, 3, 7617);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'navigationFromHomePageToBookShelf')
-data.setCell(1, 2, 'test_scenarios.BasicNavigationTests')
-data.setCell(1, 3, 5139);
+data.setCell(1, 1, 'testPriceRange')
+data.setCell(1, 2, 'test_scenarios.BookshelvesTest')
+data.setCell(1, 3, 4703);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'basicNavigationToHomePageTest')
-data.setCell(2, 2, 'test_scenarios.BasicNavigationTests')
-data.setCell(2, 3, 2039);
-window.suiteTableData['Smoke_Suite']= { tableData: data, tableDiv: 'times-div-Smoke_Suite'}
+data.setCell(2, 1, 'positiveCustomerAndRecipientTest')
+data.setCell(2, 2, 'test_scenarios.GiftCardTests')
+data.setCell(2, 3, 3637);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'positiveCustomerAndRecipientTest')
+data.setCell(3, 2, 'test_scenarios.GiftCardTests')
+data.setCell(3, 3, 3595);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'negativeCustomerAndRecipientTest')
+data.setCell(4, 2, 'test_scenarios.GiftCardTests')
+data.setCell(4, 3, 3473);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'negativeCustomerAndRecipientTest')
+data.setCell(5, 2, 'test_scenarios.GiftCardTests')
+data.setCell(5, 3, 3323);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'negativeCustomerAndRecipientTest')
+data.setCell(6, 2, 'test_scenarios.GiftCardTests')
+data.setCell(6, 3, 3315);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'negativeCustomerAndRecipientTest')
+data.setCell(7, 2, 'test_scenarios.GiftCardTests')
+data.setCell(7, 3, 3273);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'positiveCustomerAndRecipientTest')
+data.setCell(8, 2, 'test_scenarios.GiftCardTests')
+data.setCell(8, 3, 3221);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'negativeCustomerAndRecipientTest')
+data.setCell(9, 2, 'test_scenarios.GiftCardTests')
+data.setCell(9, 3, 3204);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'negativeCustomerAndRecipientTest')
+data.setCell(10, 2, 'test_scenarios.GiftCardTests')
+data.setCell(10, 3, 3088);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'negativeCustomerAndRecipientTest')
+data.setCell(11, 2, 'test_scenarios.GiftCardTests')
+data.setCell(11, 3, 3032);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'positiveCustomerAndRecipientTest')
+data.setCell(12, 2, 'test_scenarios.GiftCardTests')
+data.setCell(12, 3, 3021);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'negativeCustomerAndRecipientTest')
+data.setCell(13, 2, 'test_scenarios.GiftCardTests')
+data.setCell(13, 3, 3011);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'negativeCustomerAndRecipientTest')
+data.setCell(14, 2, 'test_scenarios.GiftCardTests')
+data.setCell(14, 3, 2958);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testStorageType')
+data.setCell(15, 2, 'test_scenarios.BookshelvesTest')
+data.setCell(15, 3, 2770);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'positiveZipCodeTest')
+data.setCell(16, 2, 'test_scenarios.GiftCardTests')
+data.setCell(16, 3, 2333);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'positiveZipCodeTest')
+data.setCell(17, 2, 'test_scenarios.GiftCardTests')
+data.setCell(17, 3, 2324);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'positiveZipCodeTest')
+data.setCell(18, 2, 'test_scenarios.GiftCardTests')
+data.setCell(18, 3, 2302);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'positiveZipCodeTest')
+data.setCell(19, 2, 'test_scenarios.GiftCardTests')
+data.setCell(19, 3, 2275);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'positiveZipCodeTest')
+data.setCell(20, 2, 'test_scenarios.GiftCardTests')
+data.setCell(20, 3, 2271);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testExcludeOutOfStock')
+data.setCell(21, 2, 'test_scenarios.BookshelvesTest')
+data.setCell(21, 3, 2051);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'positiveButtonAmountTest')
+data.setCell(22, 2, 'test_scenarios.GiftCardTests')
+data.setCell(22, 3, 750);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'positiveDateTest')
+data.setCell(23, 2, 'test_scenarios.GiftCardTests')
+data.setCell(23, 3, 695);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'positiveDateTest')
+data.setCell(24, 2, 'test_scenarios.GiftCardTests')
+data.setCell(24, 3, 635);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'positiveAmounTest')
+data.setCell(25, 2, 'test_scenarios.GiftCardTests')
+data.setCell(25, 3, 501);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'positiveDateTest')
+data.setCell(26, 2, 'test_scenarios.GiftCardTests')
+data.setCell(26, 3, 474);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'negativeDateTest')
+data.setCell(27, 2, 'test_scenarios.GiftCardTests')
+data.setCell(27, 3, 461);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'positiveDateTest')
+data.setCell(28, 2, 'test_scenarios.GiftCardTests')
+data.setCell(28, 3, 431);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'positiveButtonAmountTest')
+data.setCell(29, 2, 'test_scenarios.GiftCardTests')
+data.setCell(29, 3, 419);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'positiveAmounTest')
+data.setCell(30, 2, 'test_scenarios.GiftCardTests')
+data.setCell(30, 3, 415);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'positiveAmounTest')
+data.setCell(31, 2, 'test_scenarios.GiftCardTests')
+data.setCell(31, 3, 396);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'positiveAmounTest')
+data.setCell(32, 2, 'test_scenarios.GiftCardTests')
+data.setCell(32, 3, 381);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'negativeDateTest')
+data.setCell(33, 2, 'test_scenarios.GiftCardTests')
+data.setCell(33, 3, 348);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'negativeAmountTest')
+data.setCell(34, 2, 'test_scenarios.GiftCardTests')
+data.setCell(34, 3, 337);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'positiveButtonAmountTest')
+data.setCell(35, 2, 'test_scenarios.GiftCardTests')
+data.setCell(35, 3, 264);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'negativeButtonAmountTest')
+data.setCell(36, 2, 'test_scenarios.GiftCardTests')
+data.setCell(36, 3, 27);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'subMenuItemEmpty')
+data.setCell(37, 2, 'test_scenarios.HomePageTest')
+data.setCell(37, 3, 3);
+window.suiteTableData['Regression_Suite']= { tableData: data, tableDiv: 'times-div-Regression_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
-              <div id="times-div-Smoke_Suite">
-              </div> <!-- times-div-Smoke_Suite -->
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Regression_Suite">
+              </div> <!-- times-div-Regression_Suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Smoke_Suite" class="panel">
+        <div panel-name="reporter-Regression_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Smoke Suite</span>
+            <span class="header-content">Reporter output for Regression Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Smoke_Suite" class="panel">
+        <div panel-name="ignored-methods-Regression_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Smoke_Suite" class="panel">
+        <div panel-name="chronological-Regression_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">test_scenarios.BasicNavigationTests</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">test_scenarios.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">init</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test_scenarios.BookshelvesTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">init</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test_scenarios.GiftCardTests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">init</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test_scenarios.HomePageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">basicNavigationToHomePageTest(Buy Furniture Online and Get up to 50% Off | Shop Now - Urban Ladder)</span>
-                <span class="method-start">7539 ms</span>
+                <span class="method-name">subMenuCount</span>
+                <span class="method-start">18844 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test_scenarios.BookshelvesTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testPriceRange</span>
+                <span class="method-start">21728 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">navigationFromHomePageToBookShelf(Buy Bookshelves Online and Get up to 50% Off | Shop Now - Urban Ladder)</span>
-                <span class="method-start">9620 ms</span>
+                <span class="method-name">testStorageType</span>
+                <span class="method-start">26442 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test_scenarios.HomePageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">navigationFromHomePageToGiftCards(Gift Card - Buy Gift Cards & Vouchers Online for Wedding, Birthday | Urban Ladder)</span>
-                <span class="method-start">14763 ms</span>
+                <span class="method-name">subMenuItemEmpty</span>
+                <span class="method-start">26467 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">destroy</span>
-                <span class="method-start">20561 ms</span>
+                <span class="method-start">26473 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test_scenarios.BookshelvesTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testExcludeOutOfStock</span>
+                <span class="method-start">29215 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">destroy</span>
+                <span class="method-start">31269 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test_scenarios.GiftCardTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">negativeAmountTest(999, valid amount in range [1000, 500000])</span>
+                <span class="method-start">42626 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">negativeButtonAmountTest(3, there should be no more than 3 amount options buttons)</span>
+                <span class="method-start">43088 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">negativeDateTest(2024-02-29)</span>
+                <span class="method-start">43194 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">negativeDateTest(2024-06-01)</span>
+                <span class="method-start">43657 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">positiveAmounTest(1000, valid amount in range [1000, 500000])</span>
+                <span class="method-start">44104 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">positiveAmounTest(1001, valid amount in range [1000, 500000])</span>
+                <span class="method-start">44501 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">positiveAmounTest(499999, valid amount in range [1000, 500000])</span>
+                <span class="method-start">44883 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">positiveAmounTest(500000, valid amount in range [1000, 500000])</span>
+                <span class="method-start">45299 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">positiveButtonAmountTest(0, the user should be able to order with all three amount option buttons)</span>
+                <span class="method-start">45878 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">positiveButtonAmountTest(1, the user should be able to order with all three amount option buttons)</span>
+                <span class="method-start">46144 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">positiveButtonAmountTest(2, the user should be able to order with all three amount option buttons)</span>
+                <span class="method-start">46565 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">positiveDateTest(2024-03-01)</span>
+                <span class="method-start">47396 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">positiveDateTest(2024-03-02)</span>
+                <span class="method-start">48093 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">positiveDateTest(2024-05-30)</span>
+                <span class="method-start">48526 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">positiveDateTest(2024-05-31)</span>
+                <span class="method-start">49162 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">positiveZipCodeTest(400001)</span>
+                <span class="method-start">49719 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">positiveZipCodeTest(500001)</span>
+                <span class="method-start">52044 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">positiveZipCodeTest(110001)</span>
+                <span class="method-start">54316 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">positiveZipCodeTest(700001)</span>
+                <span class="method-start">56650 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">positiveZipCodeTest(560001)</span>
+                <span class="method-start">58954 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">negativeCustomerAndRecipientTest(123, 123@example.com, 9999999999, customer should not be able to fill in a number as a name, Jane Ma...)</span>
+                <span class="method-start">61290 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">negativeCustomerAndRecipientTest(John Doe, john.doe@example, 9999999999, customer should only be able to fill valid emails of type jo...)</span>
+                <span class="method-start">64498 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">negativeCustomerAndRecipientTest(John Doe, email, 9999999999, customer should only be able to fill valid emails of type john.doe@exam...)</span>
+                <span class="method-start">67459 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">negativeCustomerAndRecipientTest(John Doe, john.doe@example.com, 1234567890, customer should only be able to fill valid phone numbers...)</span>
+                <span class="method-start">70471 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">negativeCustomerAndRecipientTest(Jane Mason, jane.mason@example.com, 7033333067, customer should be able to order a gift card with va...)</span>
+                <span class="method-start">73561 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">negativeCustomerAndRecipientTest(Jane Mason, jane.mason@example.com, 7033333067, customer should be able to order a gift card with va...)</span>
+                <span class="method-start">76886 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">negativeCustomerAndRecipientTest(Jane Mason, jane.mason@example.com, 7033333067, customer should be able to order a gift card with va...)</span>
+                <span class="method-start">80203 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">negativeCustomerAndRecipientTest(Jane Mason, jane.mason@example.com, 7033333067, customer should be able to order a gift card with va...)</span>
+                <span class="method-start">83237 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">negativeCustomerAndRecipientTest(Jane Mason, jane.mason@example.com, 7033333067, customer should be able to order a gift card with va...)</span>
+                <span class="method-start">86712 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">positiveCustomerAndRecipientTest(Jane Mason, jane.mason@example.com, 7033333067, customer should be able to order a gift card with va...)</span>
+                <span class="method-start">90060 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">positiveCustomerAndRecipientTest(Jane Mason, jane.mason@example.com, 7033333067, customer should be able to order a gift card with va...)</span>
+                <span class="method-start">93698 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">positiveCustomerAndRecipientTest(Jane Mason, jane.mason@example.com, 7033333067, customer should be able to order a gift card with va...)</span>
+                <span class="method-start">96920 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">positiveCustomerAndRecipientTest(John Doe, john.doe@example.com, 9999999999, customer should be able to order a gift card with valid ...)</span>
+                <span class="method-start">99942 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">destroy</span>
+                <span class="method-start">103539 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

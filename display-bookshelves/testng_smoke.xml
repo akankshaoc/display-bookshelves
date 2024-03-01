@@ -2,11 +2,14 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="1" name="Smoke Suite">
   <test thread-count="1" name="Test">
+  	
   	<parameter name = "home-page__title" value = "Buy Furniture Online and Get up to 50% Off | Shop Now - Urban Ladder" />
   	<parameter name = "bookshelf-page__title" value = "Buy Bookshelves Online and Get up to 50% Off | Shop Now - Urban Ladder" />
   	<parameter name = "giftcard-page__title" value = "Gift Card - Buy Gift Cards &amp; Vouchers Online for Wedding, Birthday | Urban Ladder" />
+    
     <classes>
       <class name="test_scenarios.BasicNavigationTests"/>
     </classes>
+  
   </test> <!-- Test -->
 </suite> <!-- Smoke Suite -->

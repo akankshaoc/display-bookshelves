@@ -72,7 +72,7 @@ public class GiftCardsTestDataFetcher {
 		//1. res 1D array to store the results
 		String [] res = new String[sheet.getLastRowNum() - 1];
 		
-		//2. storing all the datat from the sheet of the specified column in res
+		//2. storing all the data from the sheet of the specified column in res
 		for(int row = 1; row < sheet.getLastRowNum(); row++) {
 			res[row - 1] = sheet.getRow(row).getCell(col).toString();
 		}

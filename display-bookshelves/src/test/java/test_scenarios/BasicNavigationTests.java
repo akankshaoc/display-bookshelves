@@ -43,7 +43,6 @@ public class BasicNavigationTests {
 	@Test(priority = 1)
 	@Parameters("bookshelf-page__title")
 	public void navigationFromHomePageToBookShelf(String bookShelfTitle) {
-		System.out.println(driver.getTitle());
 		// 1. click on the bookshelves link card
 		homePage.cilckOnBookshelves();
 

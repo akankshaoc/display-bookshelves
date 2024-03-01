@@ -6,6 +6,7 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 import util.DriverSetup;
 
@@ -23,9 +24,11 @@ public class HomePage {
 	}
 
 	private WebDriver driver;
+	private Actions actions;
 
 	public HomePage(WebDriver driver) {
 		this.driver = driver;
+		this.actions = new Actions(driver);
 	}
 	/**
 	 * launches the home page in the browser
@@ -55,14 +58,14 @@ public class HomePage {
 	
 	public void dealZoneClick() {
 		WebElement dealZoneButton = driver.findElement(dealZoneLocator);
-		dealZoneButton.click();
+		actions.moveToElement(dealZoneButton).build().perform();
 	}
 	
 	public List<String> storeSubMenu() throws InterruptedException{
 		List<WebElement> list = driver.findElements(subMenuLocator);
 		
 		for(WebElement element : list) {
-			Thread.sleep(1000);
+			Thread.sleep(500);
 			subMenuList.add(element.getText());
 		}
 		
@@ -81,11 +84,16 @@ public class HomePage {
 		return count;
 	}
 	
+	public void closeOperations() {
+		this.driver.quit();
+	}
+	
 	public static void main(String[] args) throws Exception {
 		HomePage obj = new HomePage(DriverSetup.getDriver());
 		obj.launch();
 		obj.dealZoneClick();
 		obj.storeSubMenu();
 		obj.printSubMenuList();
+		obj.closeOperations();
 	}
 }

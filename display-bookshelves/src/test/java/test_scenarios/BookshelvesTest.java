@@ -21,22 +21,22 @@ public class BookshelvesTest {
 		this.page.closeSignInPopup();
 	}
 
-	@Test(priority = 0, retryAnalyzer = listeners.RetryAnalyzer.class)
-	public void testPriceRange() {
+	@Test(priority = 0)
+	public void testPriceRange() throws InterruptedException {
 		String actualText = page.setPriceRange();
 		String expectedText = "₹608 - ₹15,430";
 		Assert.assertEquals(actualText, expectedText, "Price Range not selected properly!");
 
 	}
 
-	@Test(priority = 1, retryAnalyzer = listeners.RetryAnalyzer.class)
+	@Test(priority = 1)
 	public void testStorageType() {
 		String actualText = page.setStorageType();
 		String expectedText = "Open";
 		Assert.assertEquals(actualText, expectedText, "Storage type not set properly!");
 	}
 
-	@Test(priority = 2, retryAnalyzer = listeners.RetryAnalyzer.class)
+	@Test(priority = 2)
 	public void testExcludeOutOfStock() {
 		String actualText = page.excludeOutOfStock();
 		String expectedText = "In Stock Only";

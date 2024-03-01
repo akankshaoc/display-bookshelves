@@ -7,7 +7,7 @@ import util.DriverSetup;
 /**
  * this class consists of private and static field <code>driver</code>
  * use method <code>getDriver()</code> to access this driver
- * only a single instance of driver is intanciated and made accessible using the <code>getDriver()</code> method
+ * only a single instance of driver is instanciated and made accessible using the <code>getDriver()</code> method
  * @author 2308990
  *
  */

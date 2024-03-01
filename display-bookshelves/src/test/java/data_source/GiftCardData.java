@@ -12,7 +12,7 @@ import org.testng.annotations.DataProvider;
 import util.GiftCardsTestDataFetcher;
 
 /**
- * this class provides test data for class GiftCardTest it uses the annotation
+ * this class provides test data for class GiftCardTest. It uses the annotation
  * DataProvider for transmitting data between the stored excel file and the test
  * cases using utility class GiftCardsTestDataFetcher
  * 
@@ -42,7 +42,7 @@ public class GiftCardData {
 	 * <li>negativeAmounTest - returns all invalid amounts</li>
 	 * <li>positiveButtonAmountTest - return indexes of buttons that should fix a
 	 * valid amount</li>
-	 * <li>positiveButtonAmountTest - return indexes of buttons that should not be
+	 * <li>negativeButtonAmountTest - return indexes of buttons that should not be
 	 * able to fix a valid amount</li>
 	 * </ul>
 	 * 
